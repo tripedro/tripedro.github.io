@@ -1114,7 +1114,37 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     background-color: #e6e6e6;
     position: relative;
 }
+.s-header .back {
+    position: relative;
+    color: rgb(59, 59, 59);
+    font-size: 20px;
+    letter-spacing: 2px;
+    top: -135px;
+}
 
+.s-header .back span {
+    position: relative;
+    color: rgb(59, 59, 59);
+    font-size: 20px;
+    letter-spacing: 2px;
+    top: 0px; 
+
+    animation: moveDown 1s  infinite;
+}
+
+@keyframes moveDown {
+    0% {
+        left: 0px;
+    }
+
+    50% {
+        left: 5px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
 .s-header::before {
     z-index: 101;
     content: "";
